@@ -1,6 +1,6 @@
 ﻿.bio-container {
     display: grid;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 15%;
@@ -19,7 +19,7 @@
 
 .bio-description p {
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 2rem;
     color: var(--secondary-color);
 }
 
@@ -94,6 +94,28 @@
     filter: drop-shadow(0 0 12px var(--accent-color));
 }
 
+.resume-btn {
+    width: 200px;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: var(--neutral-color-2);
+    border-radius: var(--i-radius);
+    border: 2px solid var(--primary-color);
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    transition: filter, box-shadow 200ms ease-in-out;
+    box-shadow: transparent 0 0 0 2px;
+}
+
+.resume-btn:hover {
+    filter: drop-shadow(0 0 7px var(--primary-color));
+    box-shadow: var(--primary-color) 0 0 0 2px;
+}
+
 @media all and (max-width: 1000px) {
     .bio-container {
         grid-template-columns: 1fr;
@@ -128,12 +150,19 @@
         flex-direction: column;
         gap: 1.2rem;
     }
+    .resume-btn {
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 1000px) and (min-width: 650px) {
     .bio-description h1 {
         font-size: 2.2rem;
         line-height: 2.6rem;
+    }
+
+    .resume-btn {
+        margin: auto;
     }
 
     .bio-buttons {

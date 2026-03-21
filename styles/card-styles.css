@@ -41,7 +41,7 @@
 .card-tags {
     color: var(--primary-color);
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1rem;
     display: flex;
     gap: 5px;
     padding: 0 18px;
@@ -50,7 +50,7 @@
 
 .card-tags > span {
     border: var(--primary-color) solid 2px;
-    padding: 0 8px;
+    padding: 1px 8px;
     padding-top: 3px;
     line-height: 1rem;
     border-radius: 100px;
