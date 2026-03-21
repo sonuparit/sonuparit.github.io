@@ -1,0 +1,598 @@
+<!doctype html>
+<html data-theme="dark" lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CSSE420M1H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "G-CSSE420M1H");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <meta content="en" http-equiv="Content-Language" />
+    <meta
+      content="I'm Sonu Parit, a passionate devops engineer showcasing my skills and projects. Explore my portfolio to discover my expertise in AWS, Docker, Kubernetes and more. Learn about my journey and passion for creating innovative cloud solutions."
+      name="description"
+    />
+    <meta
+      content="devops engineer, portfolio, cloud computing, Python, Java Script, Kubernetes, Docker, Jenkins, GitOps, CI/CD, Jira, Ansible, AWS, Terraform, GitLab, Helm, Linux, Shell Scripting, ArgoCD, Prometheus, Grafana, programming, web projects, developer portfolio, devops developer portfolio"
+      name="keywords"
+    />
+    <meta content="Sonu Parit" name="author" />
+
+    <!-- Open Graph -->
+    <meta content="Sonu Parit | A devops engineer." property="og:title" />
+    <meta content="https://sonuparit.github.io/" property="og:url" />
+
+    <title>Sonu Parit | A devops engineer.</title>
+    <script
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/8955b6fb14.js"
+    ></script>
+
+    <link href="styles.css" rel="stylesheet" />
+    <link href="/styles/header-styles.css" rel="stylesheet" />
+    <link href="/styles/hero-styles.css" rel="stylesheet" />
+    <link href="/styles/introduction-styles.css" rel="stylesheet" />
+    <link href="/styles/card-styles.css" rel="stylesheet" />
+    <link href="/styles/footer-styles.css" rel="stylesheet" />
+    <link href="/styles/theme-select-styles.css" rel="stylesheet" />
+    <link href="/styles/buttons-styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="mobile-header">
+        <a href="#" style="line-height: 0">
+          <img
+            alt="Website logo."
+            class="logo"
+            src="images/Sonu/my-logo.png"
+            width="45px"
+            title="Sonu Parit"
+        /></a>
+
+        <button class="circularBtn" id="hamburgerBtn">
+          <i class="fa-solid fa-bars fa-flip-both"></i>
+        </button>
+      </div>
+      <div class="header-links">
+        <a
+          class="header-link"
+          href="#about-header"
+          onclick="closeSideBarOnMobile()"
+          >About</a
+        >
+        <a
+          class="header-link"
+          href="#skills-header"
+          onclick="closeSideBarOnMobile()"
+          >Skills</a
+        >
+        <a
+          class="header-link"
+          href="#projects-header"
+          onclick="closeSideBarOnMobile()"
+          >Projects</a
+        >
+        <a
+          class="header-link"
+          href="#Connect-with-me"
+          onclick="closeSideBarOnMobile()"
+          >Connect</a
+        >
+
+        <div class="themeSelectWrapper">
+          <button
+            class="circularBtn"
+            id="themeButton"
+            onclick="toggleSelectMenu()"
+          >
+            <i class="fa-solid fa-sun" id="themeIcon"></i>
+          </button>
+          <div class="themeOptions" id="themeOptions">
+            <div
+              class="themeOption"
+              data-icon="fa-solid fa-wand-magic-sparkles fa-shake"
+              data-value="os"
+              onclick="selectTheme('os')"
+            >
+              <i class="fa-solid fa-wand-magic-sparkles"></i> System
+            </div>
+            <div
+              class="themeOption"
+              data-icon="fa-solid fa-sun fa-beat"
+              data-value="light"
+              onclick="selectTheme('light')"
+            >
+              <i class="fa-solid fa-sun"></i> Light
+            </div>
+            <div
+              class="themeOption"
+              data-icon="fa-solid fa-moon fa-fade"
+              data-value="dark"
+              onclick="selectTheme('dark')"
+            >
+              <i class="fa-solid fa-moon"></i> Dark
+            </div>
+          </div>
+        </div>
+
+        <div class="sideBarCloser" onpointerdown="toggleHamburgerMenu()"></div>
+      </div>
+    </header>
+
+    <!--    Hero Section (Bio)-->
+
+    <section style="display: flex; justify-content: center">
+      <div class="bio-container">
+        <div class="bio-description">
+          <h1>Hello I'm</h1>
+          <h1 style="color: #9e78c6">Sonu Parit</h1>
+          <h1>DevOps Engineer</h1>
+
+          <p style="text-wrap: balance">
+            I design, deploy and automate cloud-native systems with Kubernetes,
+            CI/CD, and IaC — focused on reliability, scalability, and real-world
+            production impact.
+          </p>
+
+          <div class="bio-buttons">
+            <a
+              class="bio-cta contact-btn"
+              href="https://wa.me/918374485176?text=Hello%20I%20saw%20your%20portfolio%20and%20want%20to%20connect%20with%20you"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-whatsapp"
+                viewBox="0 0 20 20"
+                style="margin-right: 5px"
+              >
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                />
+              </svg>
+              Get In Touch</a
+            >
+            <a class="bio-cta bio-cta-outline" href="#projects-header"
+              >View My Work</a
+            >
+          </div>
+        </div>
+
+        <div class="profile-pic-container">
+          <svg viewBox="0 0 573.75 527.31">
+            <defs>
+              <style>
+                .cls-4 {
+                  clip-path: url(#clip-path);
+                }
+              </style>
+              <clipPath id="clip-path" transform="translate(-14.54 -0.79)">
+                <path
+                  class="cls-1"
+                  d="M104.59,423.4c58.48,21.87,360.8,9,412.61-12.63s-96.84-71-101.75-117.19,105.56-110,72.28-160C381.85-25.54,152.54,96.64,99,121s66.43,108.18,67.36,158.59-120.22,122-61.75,143.85,360.8,9,412.61-12.63"
+                />
+              </clipPath>
+            </defs>
+            <path
+              class="profile-pic-background-1"
+              d="M517.2,410.77c51.81-21.64-96.84-71-101.75-117.19s125-131.22,72.28-160S152.54,96.64,99,121s66.43,108.18,67.36,158.59-120.22,122-61.75,143.85c10.33,3.86,30.67,6.41,53.46,6.24,106.72-.78,316.49-1.06,359.15-18.87"
+              transform="translate(-14.54 -0.79)"
+            />
+            <path
+              class="profile-pic-background-1"
+              d="M104.59,423.4"
+              transform="translate(-14.54 -0.79)"
+            />
+            <path
+              class="profile-pic-background-2"
+              d="M362.6,3.26C296.73,26.58,46.8,255.09,17.94,310.91s134.09-8.8,171.54,27.28-12.79,202.44,53.13,189.16S556.56,317.9,585,258.51s-134.77-45-171.84-87.5S428.47-20.06,362.6,3.26,46.8,255.09,17.94,310.91"
+              transform="translate(-14.54 -0.79)"
+            />
+            <g class="cls-4">
+              <image
+                transform="translate(99.31 61.63) scale(0.37)"
+                xlink:href="./images/sonu/sonu.png"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Flying Shapes Decoration -->
+      <div class="flying-shapes">
+        <svg class="flying-shape shape-1" height="100" width="100">
+          <circle cx="50" cy="50" fill="rgba(118, 89, 149, 0.8)" r="5" />
+        </svg>
+        <svg class="flying-shape shape-2" height="80" width="80">
+          <circle cx="40" cy="15" fill="rgba(118, 89, 149, 0.6)" r="15" />
+        </svg>
+        <svg class="flying-shape shape-3" height="120" width="120">
+          <circle cx="60" cy="15" fill="rgba(118, 89, 149, 0.6)" r="5" />
+        </svg>
+        <svg class="flying-shape shape-4" height="120" width="120">
+          <circle cx="50" cy="50" fill="rgba(118, 89, 149, 0.7)" r="5" />
+        </svg>
+        <svg class="flying-shape shape-5" height="120" width="120">
+          <circle cx="50" cy="50" fill="rgba(118, 89, 149, 0.6)" r="10" />
+        </svg>
+        <svg class="flying-shape shape-6" height="100" width="100">
+          <polygon
+            fill="rgba(118, 89, 149, 0.6)"
+            points="50,15 65,35 55,65 45,65 35,35"
+          />
+        </svg>
+        <svg class="flying-shape shape-7" height="120" width="120">
+          <circle cx="50" cy="50" fill="rgba(118, 89, 149, 0.3)" r="5" />
+        </svg>
+        <svg class="flying-shape shape-8" height="100" width="100">
+          <line
+            stroke="rgba(118, 89, 149, 0.7)"
+            stroke-width="3"
+            x1="10"
+            x2="90"
+            y1="10"
+            y2="90"
+          />
+        </svg>
+        <svg class="flying-shape shape-9" height="120" width="120">
+          <circle cx="50" cy="50" fill="rgba(118, 89, 149, 0.4)" r="12" />
+        </svg>
+        <svg class="flying-shape shape-10" height="100" width="100">
+          <polygon
+            fill="rgba(118, 89, 149, 0.6)"
+            points="50,15 65,35 55,65 45,65 35,35"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!--    Website Introduction-->
+
+    <section class="website-introduction fade-in">
+      <div class="website-introduction-cards">
+        <img
+          alt="small-tool-image"
+          title="Linux"
+          src="./images/my-techs/linux.png"
+        />
+        <img
+          alt="small-tool-image"
+          title="AWS"
+          src="./images/my-techs/aws.png"
+        />
+        <img
+          alt="small-tool-image"
+          title="Docker"
+          src="./images/my-techs/docker.png"
+        />
+        <img
+          alt="small-tool-image"
+          title="Python"
+          src="./images/my-techs/py.png"
+        />
+        <img
+          alt="small-tool-image"
+          title="Helm"
+          src="./images/my-techs/helm.png"
+        />
+        <img
+          alt="small-tool-image"
+          title="Grafana"
+          src="./images/my-techs/grafana.png"
+        />
+      </div>
+      <div style="text-align: center">
+        <h1 style="margin: 0; line-height: 3rem">Welcome To My Portfolio!</h1>
+        <p>
+          Here, you can explore my latest projects, showcasing my DevOps skills
+          in Automation, Cloud, Kubernetes and IaC and my journey toward
+          building scalable, production-ready systems.
+        </p>
+      </div>
+      <div class="website-introduction-cards">
+        <img
+          alt="small-tool-image"
+          title="Ansible"
+          src="./images/my-techs/Ansible.png"
+        />
+        <img
+          alt="small-tool-image"
+          title="GitOps"
+          src="./images/my-techs/gitops.png"
+        />
+        <img
+          alt="small-tool-image"
+          title="Jenkins"
+          src="./images/my-techs/jenkins.png"
+        />
+        <img
+          alt="small-tool-image"
+          title="Kubernetes"
+          src="./images/my-techs/k8.png"
+        />
+        <img
+          alt="small-tool-image"
+          title="Argo CD"
+          src="./images/my-techs/argocd.png"
+        />
+        <img
+          alt="small-project-image"
+          title="terraform"
+          src="./images/my-techs/tf.png"
+        />
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h3 class="fade-in" id="about-header">About Me</h3>
+      <p class="fade-in">
+        I began my career as an
+        <strong>Indian Army Aviation Technician</strong>, working for 7 years in
+        a highly disciplined technical environment. During this time,
+        <strong>I built an Excel-based automation tool</strong> that reduced a
+        maintenance process from two weeks to seconds.
+      </p>
+      <p class="fade-in">
+        Driven by a strong interest in automation and problem-solving, I
+        transitioned into DevOps, where I’ve self-learned tools and technologies
+        across cloud, CI/CD, and infrastructure.
+      </p>
+      <p class="fade-in">
+        I’m now seeking an opportunity as a DevOps Engineer to build scalable
+        systems and continue growing in cloud and automation.
+      </p>
+    </section>
+
+    <div class="tools-section">
+      <br />
+      <h3 class="skills-section fade-in" id="skills-header">Tech Stack</h3>
+      <br /><br />
+      <div class="skills-container fade-in">
+        <div class="tools-stack">
+          <img src="images/my-techs/aws.png" alt="AWS" />
+          <p>AWS</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/tf.png" alt="terraform" />
+          <p>Terraform</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/Ansible.png" alt="Ansible" />
+          <p>Ansible</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/argocd.png" alt="Argo CD" />
+          <p>Argo CD</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/k8.png" alt="Kubernetes" />
+          <p>Kubernetes</p>
+        </div>
+      </div>
+
+      <div class="skills-container fade-in">
+        <div class="tools-stack">
+          <img src="images/my-techs/gitops.png" alt="GitOps" />
+          <p>GitOps</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/helm.png" alt="Helm" />
+          <p>Helm</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/jenkins.png" alt="Jenkins" />
+          <p>Jenkins</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/grafana.png" alt="Grafana" />
+          <p>Grafana</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/py.png" alt="Python" />
+          <p>Python</p>
+        </div>
+      </div>
+
+      <div class="skills-container fade-in">
+        <div class="tools-stack">
+          <img src="images/my-techs/linux.png" alt="Linux" />
+          <p>Linux</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/docker.png" alt="Docker" />
+          <p>Docker</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/bash.png" alt="bash" />
+          <p>Bash</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/js.png" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/gitlab.png" alt="GitLab" />
+          <p>GitLab</p>
+        </div>
+      </div>
+
+      <div class="skills-container fade-in">
+        <div class="tools-stack">
+          <img src="images/my-techs/git.png" alt="Git" />
+          <p>Git</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/dj.png" alt="Django" />
+          <p>Django</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/jira.png" alt="Jira" />
+          <p>Jira</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/github.png" alt="GitHub" />
+          <p>GitHub</p>
+        </div>
+        <div class="tools-stack">
+          <img src="images/my-techs/Prometheus.png" alt="Prometheus" />
+          <p>Prometheus</p>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="fade-in" id="projects-header">My Projects</h1>
+
+    <section class="cards-container">
+      <!-- Template Definition -->
+      <template id="card-template">
+        <div class="card fade-in" onclick="location.href = 'URL'">
+          <div class="card-image-container">
+            <img alt="IMAGE_ALT" class="card-image" src="IMAGE_SRC" />
+          </div>
+          <div class="card-lower-part">
+            <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M28,3.5H4.7C3.8,3.5,3,3.4,2.2,3C1.1,2.4,0.3,1.4,0.1,0H0v13.6v13.5V28c0,1.1,0.9,2,2,2h1.5h16.8H28 c1.1,0,2-0.9,2-2V5.5C30,4.4,29.1,3.5,28,3.5z"
+              />
+            </svg>
+            <h2 class="card-title">TITLE</h2>
+            <div class="card-tags"></div>
+            <p class="card-desc">DESCRIPTION</p>
+            <div class="card-links">
+              <a class="card-src-link" href="URL" target="_blank"
+                >Source Code</a
+              >
+              <!-- <a class="card-cta" href="URL" style="display: none;">View Page</a> -->
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <!-- Project-1 -->
+      <card-component
+        desc="Successfully implemented full CI-CD pipeline and IaC with terraform provisioning. Deployed a scalable Kubernetes cluster on AWS EKS, utilizing Helm for application management and Argo CD for GitOps-based continuous deployment. This project demonstrates my expertise in cloud infrastructure, automation, and modern DevOps practices."
+        img-alt="A screenshot of my project."
+        img-src="./images/projects/project-1/full-ci-cd-with-tf.png"
+        src-url="https://github.com/sonuparit/retail-store-sample-app"
+        tags="AWS, Terraform, GitHub Actions, Kubernetes, Helm, Argo CD"
+        title="Full CI-CD pipeline and IaC with terraform provisioning"
+      ></card-component>
+
+      <!-- Project-2 -->
+      <card-component
+        desc="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        img-src="./images/projects/new-project/new-project.png"
+        src-url="https://github.com/sonuparit/"
+        tags="AWS, GitHub Actions, Kubernetes"
+        title="Currently working on a new project, stay tuned for updates!"
+      ></card-component>
+    </section>
+
+    <!-- CTA Section -->
+
+    <section class="cta-section fade-in">
+      <h1 style="text-align: center">
+        Need reliable, automated infrastructure?
+      </h1>
+      <p>
+        From code to production, let’s connect to automate, scale, and make your
+        systems resilient.
+      </p>
+      <a
+        class="bio-cta contact-btn"
+        href="mailto:sonu.parit1@gmail.com"
+        target="_blank"
+        >Mail Me</a
+      >
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer-connect fade-in">
+        <div class="fade-in" id="Connect-with-me">Let's Connect</div>
+        <div class="footer-links fade-in">
+          <a
+            class="footer-link"
+            href="mailto:sonu.parit1@gmail.com"
+            target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a
+            class="footer-link"
+            href="https://wa.me/918374485176?text=Hello%20I%20saw%20your%20portfolio%20and%20want%20to%20connect%20with%20you"
+            target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a
+            class="footer-link"
+            href="https://github.com/sonuparit/"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/in/sonuparit/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-text fade-in">
+        <div style="display: flex; align-items: center">
+          <div>
+            <img
+              alt="Website logo."
+              class="logo"
+              src="images/Sonu/my-logo.png"
+              width="150px"
+            />
+          </div>
+          <div style="margin-left: 20px">
+            <div class="big-font">Sonu Parit</div>
+            <div>DevOps Engineer</div>
+          </div>
+        </div>
+        <br /><br />
+        <p class="card-desc">
+          Built with passion for scalable systems and clean automation.
+        </p>
+        <br /><br />
+        <p style="text-align: center">© <span id="year"></span> Sonu Parit</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="scripts/index-script.js"></script>
+  <script src="scripts/theme-manager.js"></script>
+  <script src="scripts/fade-in-manager.js"></script>
+</html>
