@@ -150,6 +150,16 @@
         flex-direction: column;
         gap: 1.2rem;
     }
+
+    .tools-stack {
+        width: 30px;
+    }
+
+    .tools-stack img {
+        width: 40px;
+        height: 40px;
+    }
+    
     .resume-btn {
         width: 100%;
     }
@@ -159,6 +169,15 @@
     .bio-description h1 {
         font-size: 2.2rem;
         line-height: 2.6rem;
+    }
+
+    .tools-stack {
+        width: 50px;
+    }
+
+    .tools-stack img {
+        width: 50px;
+        height: 50px;
     }
 
     .resume-btn {
