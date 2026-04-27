@@ -160,6 +160,12 @@
 
 /* 2 columns on tablets. */
 @media all and (min-width: 850px) {
+    /* .cards-container {
+        display: block;
+        columns: 2;
+        break-inside: false;
+        column-gap: 20px;
+    } */
 
     .cards-container {
         flex: 1 1;
