@@ -81,9 +81,21 @@
 .impact-stat {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     border-top: 1px solid var(--primary-color);
     padding: 5px;
     gap: 10px;
+}
+
+.impact-stat a {
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.impact-stat a:hover {
+    color: var(--link-color);
+    transition: 0.3s;
 }
 
 .impact-key {

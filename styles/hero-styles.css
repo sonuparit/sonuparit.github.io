@@ -38,7 +38,7 @@
     flex-direction: column;
 }
 
-.profile-pic-container > svg {
+.profile-pic-container>svg {
     position: absolute;
     max-width: 500px;
     margin: 0 8px;
@@ -51,6 +51,37 @@
 .profile-pic-background-2 {
     fill: #765995;
     fill-opacity: 0.95;
+}
+
+.hero-impact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.hero-heading {
+    display: flex;
+    border-bottom: 2px solid #765995;
+    justify-content: flex-start;
+}
+
+.hero {
+    padding-left: 10px;
+    text-align: left;
+    align-self: flex-end;
+}
+
+.percent {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.hero-desc {
+    font-size: 1.1rem;
+    text-align: left;
+
 }
 
 .bio-cta {
@@ -140,7 +171,7 @@
         order: -1;
     }
 
-    .profile-pic-container > svg {
+    .profile-pic-container>svg {
         position: relative;
     }
 }
@@ -160,7 +191,7 @@
         height: 40px;
         border-radius: 15px;
     }
-    
+
     .resume-btn {
         width: 100%;
     }
@@ -275,10 +306,12 @@
         transform: translateY(0);
         opacity: 0;
     }
+
     50% {
         transform: translateY(15px);
         opacity: 1;
     }
+
     100% {
         transform: translateY(0);
         opacity: 0;
